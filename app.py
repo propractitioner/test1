@@ -21,4 +21,8 @@ st.title('NASDAQ Companies Market Cap Comparison')
 st.write('각 티커명의 폰트 크기는 시가총액에 비례합니다.')
 
 for index, row in df.iterrows():
-    st.markdown(f"<div style='font-size: {row.MarketCap / 1e10}px;'>{row.Ticker}</div>", unsafe_allow_html=True)
+    st.markdown(
+        f"<div style='font-size: {row.MarketCap / 1e10}px; line-height: 0.2;'>{row.Ticker}</div>",
+        unsafe_allow_html=True
+    )
+
