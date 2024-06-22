@@ -25,6 +25,6 @@ st.write('각 티커명의 폰트 크기는 시가총액에 비례합니다.')
 
 for index, row in df.iterrows():
     st.markdown(
-        f"<div style='font-size: {row.MarketCap / 1.7e10}px; line-height: 0.8;'>{row.Ticker}</div>",
+        f"<div style='font-size: {row.MarketCap / 1.9e10}px; line-height: 0.8;'>{row.Ticker}</div>",
         unsafe_allow_html=True
     )
