@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 
 # 주요 티커 리스트 (예시)
-tickers = ["AAPL", "MSFT", "GOOGL", "AMZN", "NVDA","TSLA"]
+tickers = ["OVV", "OXY", "OBE", "PBR", "CVE","SU", "BTE"]
 
 def get_market_cap(ticker):
     stock = yf.Ticker(ticker)
