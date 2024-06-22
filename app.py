@@ -20,8 +20,7 @@ df = pd.DataFrame(data)
 # 시가총액 기준으로 데이터프레임 정렬
 df = df.sort_values(by='MarketCap', ascending=False)
 
-st.title('NASDAQ Companies Market Cap Comparison')
-st.write('각 티커명의 폰트 크기는 시가총액에 비례합니다.')
+st.title('Ticker Market Cap Comparison by font size')
 
 for index, row in df.iterrows():
     st.markdown(
