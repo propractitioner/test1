@@ -24,6 +24,6 @@ st.title('Ticker Market Cap Comparison by font size')
 
 for index, row in df.iterrows():
     st.markdown(
-        f"<div style='font-size: {row.MarketCap / 1e8.5}px; line-height: 0.8;'>{row.Ticker}</div>",
+        f"<div style='font-size: {row.MarketCap / 2e8}px; line-height: 0.8;'>{row.Ticker}</div>",
         unsafe_allow_html=True
     )
